@@ -4,6 +4,28 @@ Contributions are **welcome** and will be fully **credited**.
 
 Please read and understand the [contribution guide](https://www.tiptap.dev/overview/contributing/) before creating an issue or pull request.
 
+## Setup
+
+To get started:
+
+`npm install`
+
+`npm run start`
+
+## Testing
+
+This project uses Cypress for testing. This fork is configured to use Replay to record tests.
+
+To run tests:
+
+`npx cypress run --project tests`
+
+To record tests with Replay:
+
+`RECORD_ALL_CONTENT=1 RECORD_REPLAY_METADATA_FILE=$(mktemp) npx cypress run --browser "Replay Firefox" --project tests`
+
+See the [Replay Recording Automated Tests Guide](https://docs.replay.io/docs/recording-automated-tests-5bf7d91b65cd46deab1867b07bd12bdf) for more information on recording and viewing replays.
+
 ## Etiquette
 
 This project is open source, and as such, the maintainers give their free time to build and maintain the source code
